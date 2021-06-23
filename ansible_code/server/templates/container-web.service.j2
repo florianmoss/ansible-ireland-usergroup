@@ -21,7 +21,7 @@ ExecStart=/usr/bin/podman run \
           --name web \
           --publish 80:80 \
           --label=io.containers.autoupdate=image \
-          docker.io/whiletruedo/ansible-anwender-web:1.0.4
+          quay.io/fmoss/ansible-ireland-usergroup
 ExecStartPost=/bin/sleep 1
 
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/container-web.ctr-id -t 10

@@ -8,6 +8,17 @@ The repo contains the source code for the talk "Ansible and Podman for IoT and E
 
 [Directory](ansible_code/)
 
+## How to replicate this?
+
+Make sure to have Vagrant installed locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/florianmoss/ansible-ireland-usergroup.git
+
+# Get the vagrant hosts running
+cd ansible-ireland-usergroup/server
+vagrant up
 
 
 
