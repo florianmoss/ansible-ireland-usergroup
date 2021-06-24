@@ -30,13 +30,13 @@ vagrant up
 
 ## Understanding Ansible Pull usage
 
-To understand what is happening, inspect the /server/Vagrantfile file first. Essentially, we are creating a minimal Fedora installation and are executing the /server/site.yml playbook against it. The site.yml file is where the magic happens.
+To understand what is happening, inspect the **/server/Vagrantfile** file first. Essentially, we are creating a minimal Fedora installation and are executing the **/server/site.yml** playbook against it. The site.yml file is where the magic happens.
 
 The playbook does the following:
 1. Create a service 'ansible-pull' with the contents from /server/template/ansible-pull.service.j2
 2. Create a timer to run this service every 5 minutes
 
-What does that mean exactly?
+```What does that mean exactly?```
 
 Essentially, the timer will reach out to the Git repo specified in **/server/template/ansible-pull.service.j2** and pull down (every 5 min) the site.yml file and  execute it locally.
 
