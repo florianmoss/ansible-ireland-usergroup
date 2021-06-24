@@ -137,7 +137,6 @@
   tasks:
 
     # container-web
-
     - name: "Manage container-web Service File"
       ansible.builtin.template:
         src: "container-web.service.j2"
