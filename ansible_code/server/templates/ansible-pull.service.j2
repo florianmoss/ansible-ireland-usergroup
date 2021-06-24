@@ -9,7 +9,7 @@ After=network-online.target
 ExecStart=/usr/bin/ansible-pull \
           -U https://github.com/florianmoss/ansible-ireland-usergroup.git \
           -i '%H', \
-          -C main \
+          -C master \
           -c local \
           -d /var/lib/ansible \
           --full \
